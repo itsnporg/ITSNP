@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  width: 100%;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  width: 100%;
+}
+
+.itsnp {
+  border-radius: 2px;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.itsnp img {
+  transition: 0.4s;
+}
+
+.itsnp img:hover {
+  transform: scale(1.1);
+}
+
+.SNP {
+  transition: 0.4s;
+  color: rgb(0, 0, 0);
+}
+
+.SNP:hover {
+  font-size: larger;
+  opacity: 0.9;
+}
+
+.inner-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: -2px 5px;
+  margin: 0rem 1.5rem;
+}
+
+.gradient-btn button {
+  font-weight: bolder;
+  width: 150px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.gradient-btn button:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.gradient-btn button:focus {
+  outline: none;
+}
+
+/*green green green green green green green green green theme */
+.gradient-btn button {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #40e495,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/* title */
+
+.top-title {
+  display: flexbox;
+  margin-left: 14vw;
+  margin-top: 10vh;
+}
+
+.top-title img {
+  width: 50px;
+}
+.top-title span {
+  /* font-size: 35px;
+  font-weight: bolder; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 75px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top-title .sndline {
+  margin-top: 4vh;
+  font-size: 40px;
+}
+
+.top-title p {
+  margin-top: 5vh;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.top-title2 {
+  display: flexbox;
+  margin-left: 52vw;
+  margin-top: 10vh;
+  margin-bottom: 6vh;
+}
+.top-title2 p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+
+  color: #000000;
+}
+
+.bepart {
+  display: flex;
+  margin-left: 6vw;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 75px;
+  margin-bottom: 5vh;
+
+  color: #000000;
+}
+
+.apply-text {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.apply-text button,
+.apply-btn button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  width: 60%;
+
+  color: #000000;
+}
+.apply-text button {
+  border-radius: 50px;
+  background: #fafafa;
+  box-shadow: 5px 5px 15px #dadada, -5px -5px 15px #ffffff;
+}
+
+/* apply real button */
+
+.real-btn {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-top: 2vh;
+}
+.real-btn button {
+  width: 60%;
+}
