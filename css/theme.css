@@ -43,7 +43,8 @@
 }
 
 input:checked+.slider {
-  background-color: #66bb6a;
+  background-color: #0a0a0a;
+  border: 1px solid var(--title-color);
 }
 
 input:checked+.slider:before {
