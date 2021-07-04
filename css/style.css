@@ -195,19 +195,19 @@ header {
   font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
-  width: 60%;
+  width: 32%;
+  padding: 1%;
 
   color: var(--primary-color);
 }
 
 .apply-text button {
   border-radius: 50px;
-  background: var(--secondary-color);
+  /* background: var(--secondary-color); */
   box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
 
 /* apply real button */
-
 .real-btn {
   display: flex;
   justify-content: center;
@@ -217,4 +217,21 @@ header {
 
 .real-btn button {
   width: 60%;
+}
+
+.second-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vh;
+}
+
+.second-text button {
+  padding: 1%;
+  width: 32%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  background: none;
+  border: none;
 }
