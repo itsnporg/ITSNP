@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
+:root {
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: white;
+  --title-color: black;
+  --bg-color: white;
+  --header-color: rgba(255, 255, 255, 0.4);
+  --apply-text: #dadada;
+  --apply-text2: #ffffff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #dfd6d6;
+  --secondary-color: #1e1e33;
+  --title-color: #dfd6d6;
+  --bg-color: #161625;
+  --header-color: #161625;
+  --apply-text: #0c0c15;
+  --apply-text2: #202035;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +30,13 @@
 }
 
 body {
-  background-color: white;
-  color: black;
+  background-color: var(--bg-color);
+  color: var(--title-color);
   width: 100%;
 }
 
 header {
-  background: rgba(255, 255, 255, 0.4);
+  background: var(--header-color);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
 
@@ -43,7 +63,7 @@ header {
 
 .SNP {
   transition: 0.4s;
-  color: rgb(0, 0, 0);
+  color: var(--primary-color);
 }
 
 .SNP:hover {
@@ -89,13 +109,11 @@ header {
 
 /*green green green green green green green green green theme */
 .gradient-btn button {
-  background-image: linear-gradient(
-    to right,
-    #25aae1,
-    #40e495,
-    #30dd8a,
-    #2bb673
-  );
+  background-image: linear-gradient(to right,
+      #25aae1,
+      #40e495,
+      #30dd8a,
+      #2bb673);
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
@@ -110,6 +128,7 @@ header {
 .top-title img {
   width: 50px;
 }
+
 .top-title span {
   /* font-size: 35px;
   font-weight: bolder; */
@@ -118,10 +137,11 @@ header {
   font-size: 50px;
   line-height: 75px;
 
-  color: #000000;
+  color: var(--primary-color);
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .top-title .sndline {
   margin-top: 4vh;
   font-size: 40px;
@@ -139,12 +159,13 @@ header {
   margin-top: 10vh;
   margin-bottom: 6vh;
 }
+
 .top-title2 p {
   font-weight: 500;
   font-size: 30px;
   line-height: 45px;
 
-  color: #000000;
+  color: var(--primary-color);
 }
 
 .bepart {
@@ -157,7 +178,7 @@ header {
   line-height: 75px;
   margin-bottom: 5vh;
 
-  color: #000000;
+  color: var(--primary-color);
 }
 
 .apply-text {
@@ -165,6 +186,7 @@ header {
   justify-content: center;
   column-gap: 2rem;
 }
+
 .apply-text button,
 .apply-btn button {
   border: none;
@@ -175,12 +197,13 @@ header {
   font-size: 1.5rem;
   width: 60%;
 
-  color: #000000;
+  color: var(--primary-color);
 }
+
 .apply-text button {
   border-radius: 50px;
-  background: #fafafa;
-  box-shadow: 5px 5px 15px #dadada, -5px -5px 15px #ffffff;
+  background: var(--secondary-color);
+  box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
 
 /* apply real button */
@@ -191,6 +214,7 @@ header {
   column-gap: 2rem;
   margin-top: 2vh;
 }
+
 .real-btn button {
   width: 60%;
 }
