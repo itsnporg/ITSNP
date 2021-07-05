@@ -1,14 +1,3 @@
-.theme-switch-wrapper {
-  display: inline-flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin: 1px;
-}
-
-/* .theme-switch {
-  display: flex;
-} */
-
 .theme-switch input {
   display: none;
 }
@@ -36,10 +25,15 @@ input:checked + .slider .fa-sun:before {
 
 .slider {
   transform: rotate(-25deg);
+  margin-top: -46px;
+  margin-right: 13px;
 }
 .slider i {
   height: 0px;
 }
-.theme-switch {
-  margin-left: 80vw;
+
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
