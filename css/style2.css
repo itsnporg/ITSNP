@@ -1,0 +1,28 @@
+.container-wwd {
+  display: grid;
+  margin: auto;
+}
+
+.container-wwd .title ul {
+  padding-left: 1.5rem;
+  font-weight: bolder;
+}
+
+.container-wwd .title ul li {
+  list-style: circle;
+}
+
+/* 
+
+.workshop-img {
+    display: inline-block;
+    flex-direction: row;
+} */
+
+.title hi {
+  font-size: 3.5em;
+}
+
+.title ul {
+  font-size: 1.5em;
+}
