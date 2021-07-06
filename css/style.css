@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
 :root {
   --primary-color: rgb(0, 0, 0);
   --secondary-color: white;
@@ -66,7 +67,7 @@ body {
 header {
   background: var(--header-color);
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 100%;
   height: 73px;
@@ -79,8 +80,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -93,7 +94,7 @@ header {
 
 .itsnp img:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .SNP {
@@ -112,11 +113,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: -2px 5px;
   margin: 0rem 2.5rem;
 }
@@ -150,7 +151,7 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(#25aae1), color-stop(#40e495), color-stop(#30dd8a), to(#2bb673));
   background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
   -webkit-box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
-          box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
 .top-title {
@@ -159,8 +160,8 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .landing {
@@ -170,11 +171,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #color-text {
@@ -211,7 +212,7 @@ header {
   display: grid;
   margin-top: 1em;
   -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .top-title2 p {
@@ -242,10 +243,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 2rem;
-          column-gap: 2rem;
+  column-gap: 2rem;
 }
 
 .apply-text button,
@@ -264,7 +265,7 @@ header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   text-align: center;
   grid-gap: 1rem;
@@ -276,13 +277,13 @@ header {
   padding: 1rem;
   font-size: clamp(14px, 1.4rem, 32px);
   -webkit-box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
-          box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
+  box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
 
 .apply-text button {
   border-radius: 50px;
   -webkit-box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
-          box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
+  box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
 
 .real-btn {
@@ -290,10 +291,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 14rem;
-          column-gap: 14rem;
+  column-gap: 14rem;
   margin-top: 2vh;
 }
 
@@ -302,11 +303,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .second-text button {
@@ -340,8 +341,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 1rem;
 }
 
@@ -352,13 +353,13 @@ header {
 .team img {
   width: 80%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   background-color: var(bg);
   background-image: url(assets/Circles.svg);
   border-radius: 18px;
   padding: 1rem;
   -webkit-box-shadow: 11px 11px 22px var(--shadow-1), -11px -11px 22px var(--shadow-2);
-          box-shadow: 11px 11px 22px var(--shadow-1), -11px -11px 22px var(--shadow-2);
+  box-shadow: 11px 11px 22px var(--shadow-1), -11px -11px 22px var(--shadow-2);
 }
 
 .bepart img {
@@ -366,7 +367,7 @@ header {
   height: 50px;
   width: 50px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 /* footer */
@@ -375,11 +376,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -392,12 +393,12 @@ header {
   position: relative;
   border-radius: 50%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 25px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -407,9 +408,9 @@ header {
   transition: 0.4s;
 }
 
-.footer a:hover > i {
+.footer a:hover>i {
   -webkit-transform: scale(1.4) rotate(25deg);
-          transform: scale(1.4) rotate(25deg);
+  transform: scale(1.4) rotate(25deg);
   /* color: var(--primary-color); */
 }
 
@@ -439,7 +440,7 @@ header {
 
 .container-wwd {
   -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
 }
 
@@ -450,48 +451,60 @@ header {
 .container-wwd img {
   width: 400px;
   height: auto;
+  border-radius: 15px;
 }
 
 @media (max-width: 700px) {
   .team img {
     width: 100%;
   }
+
   .landing {
     padding: 1.5rem;
   }
+
   .top-title2 {
     display: block;
   }
+
   .top-title2 .empty-div {
     display: none;
   }
+
   .be-part-applying {
     -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
   }
+
   .be-part-applying h3 {
     font-size: 1.2rem;
   }
+
   .bpu {
     padding-left: 1rem;
   }
+
   .teams-section {
     padding: 1rem;
   }
+
   .container-wwd {
     padding: 1rem;
     -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;
   }
+
   .container-wwd .title {
     padding-left: 0 !important;
   }
+
   .container-wwd img {
     width: 90%;
     height: auto;
   }
+
   .container-wwd li {
     font-size: 1.1rem;
     font-weight: lighter;
@@ -499,31 +512,39 @@ header {
 }
 
 @media (max-width: 550px) {
+
   .top-title p,
   .top-title2 p {
     font-size: 1.1rem !important;
   }
+
   .top-title .sndline {
     font-size: 1.5rem;
   }
+
   .be-part-applying h3,
   second-text apply-text {
     font-size: 1rem !important;
   }
+
   .landing {
     padding: 1rem;
   }
+
   .be-part-applying {
     -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
+
   .kot {
     font-size: 1.5rem;
     margin-left: 0;
     padding-left: 1rem;
   }
+
   .kot i {
     margin: 0;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
