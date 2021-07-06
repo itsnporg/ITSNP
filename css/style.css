@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Rubik:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap");
 :root {
   --primary-color: rgb(0, 0, 0);
   --secondary-color: white;
@@ -21,7 +21,6 @@
   --header-color: #161625;
   --apply-text: #0c0c15;
   --apply-text2: #202035;
-  --team-bg: ;
   --bg: #161625;
   --shadow-1: #13131f;
   --shadow-2: #19192b;
@@ -30,7 +29,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -179,6 +178,7 @@ header {
 
 #highlight {
   color: #40e495;
+  font-size: larger;
 }
 
 .about-title-top img {
@@ -188,7 +188,7 @@ header {
 .about-title-top span {
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.8em;
   line-height: 75px;
   color: var(--primary-color);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -203,7 +203,6 @@ header {
   font-weight: 500;
   font-size: 1.7em;
   text-align: left;
-  vertical-align: top;
 }
 
 .about-title-second {
@@ -314,6 +313,7 @@ header {
   font-size: 20px;
   font-weight: bolder;
   padding: 1rem 2rem;
+  margin-top: 4vh;
   text-align: center;
   text-decoration: none;
   background: none;
@@ -324,7 +324,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 2em;
@@ -355,7 +354,7 @@ header {
   -o-object-fit: contain;
      object-fit: contain;
   background-color: var(bg);
-  background-image: url(assets/Circles.svg);
+  background-image: url(/assets/Circles.svg);
   border-radius: 18px;
   padding: 1rem;
   -webkit-box-shadow: 11px 11px 22px var(--shadow-1), -11px -11px 22px var(--shadow-2);
@@ -600,5 +599,9 @@ input:checked + .slider .fa-sun:before {
 
 .workshop-img {
   border-radius: 5px;
+}
+
+.gradient-btn button {
+  margin-top: 2vh;
 }
 /*# sourceMappingURL=style.css.map */
