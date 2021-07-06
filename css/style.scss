@@ -381,6 +381,46 @@ header {
   }
 }
 
+.theme-switch input {
+  display: none;
+}
+
+.slider .fa-moon {
+  display: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.slider .fa-sun:before {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+input:checked + .slider .fa-moon {
+  display: block;
+  transition: 0.4s;
+}
+
+input:checked + .slider .fa-sun:before {
+  display: none;
+  transition: 0.4s;
+}
+
+.slider {
+  transform: rotate(-25deg);
+  margin-top: -46px;
+  margin-right: 13px;
+}
+.slider i {
+  height: 0px;
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 @media (max-width: 700px) {
   .team img {
     width: 100%;
@@ -434,6 +474,28 @@ header {
       font-weight: lighter;
     }
   }
+
+  .container-wwd .title ul li {
+    list-style: circle;
+  }
+}
+
+.container-wwd {
+  display: grid;
+  margin: auto;
+}
+
+.container-wwd .title ul {
+  padding-left: 1.5rem;
+  font-weight: bolder;
+}
+
+.container-wwd .title ul li {
+  list-style-image: url(/assets/bulletin.png);
+}
+
+.title ul {
+  font-size: 2em;
 }
 
 @media (max-width: 550px) {
@@ -467,6 +529,10 @@ header {
 
   .kot i {
     margin: 0;
+  }
+
+  .container-wwd .title ul li {
+    list-style: circle;
   }
 }
 
