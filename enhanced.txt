@@ -1,0 +1,2 @@
+class name changes  , formatted 
+for better readabillity and repeatative css property removed 
