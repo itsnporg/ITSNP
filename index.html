@@ -6,14 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- <script src="/js/script.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+
 </head>
 
 <body>
+    <div class="loader"></div>
     <header>
         <div class="inner-width">
             <div class="itsnp">
@@ -37,7 +40,6 @@
     </header>
 
     <script src="js/script.js"></script>
-    <!-- body starts from here - titles heading paragraph -->
     <div class="about-itsnp">
         <div class="about-title-top">
             <span id="hi-text"><img src="assets/hello.gif" alt="" />
@@ -67,8 +69,6 @@
             <h3 class="bepart-heading">Be Part of Us</h3>
             <img src="assets/group.gif" alt="group" />
         </div>
-
-        <!-- buttons and text button -->
         <div class="apply-text-button-box">
             <div class="tutor">
                 <h3>Apply for Tutor</h3>
@@ -94,13 +94,8 @@
         </div>
 
     </div>
-
-    <!-- one full page complete... Know our team started -->
-
-
     <div class="teams-section">
         <div class="team-title">
-            <!--know our team -->
             <h3>Know our Team<i class="fas fa-users" id="group"></i></h3>
         </div>
         <div class="team">
@@ -118,9 +113,6 @@
             <a class="twt" href="https://twitter.com/itsnporg"><i class="fab fa-twitter"></i></a>
         </div>
     </div>
-
-
-    <!-- WHAT WE DO PART -->
     <div class="what-we-do">
         <div class="container-wwd">
             <div class="title">
@@ -133,12 +125,9 @@
                     <li>We learn, We teach, We grow together.</li>
                 </ul>
             </div>
-            <img class="workshop-img" src="assets/workshop.jpg" alt="workshop image not showing-please relead  site">
+            <img class="img-size" src="assets/workshop.jpg" alt="workshop image not showing-please relead  site">
         </div>
-
-
         <div class="container-wwa">
-            <img class="workshop-img" src="assets/coder.gif" alt="workshop image not showing-please relead  site">
             <div class="wwa-second-title aim-box">
                 <h1>What we aim for ?</h1>
                 <ul>
@@ -148,8 +137,19 @@
                     <li>We aim to put smile on faces of techies in nepal..</li>
                 </ul>
             </div>
+            <img class="img-size" src="assets/coder.gif" alt="workshop image not showing-please relead  site">
         </div>
-
+    </div>
+    <div class="hands">
+        <div class="left-hand ">
+            <h1>Join Our Hands On Our Mission</h1>
+            <p id="paragraph">Your small help can, <br>help us in making big difference :)</p>
+            <div class="gradient-btn ">
+                <button>Donate</button>
+            </div>
+            <h2>#Together_we_can !</h2>
+        </div>
+        <img src="assets/dream.png" alt="a dream of kid image" class="img-size">
     </div>
 </body>
 

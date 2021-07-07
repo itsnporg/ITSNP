@@ -24,3 +24,9 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+
+$(window).on("load", function () {
+  console.log("preloader script loaded")
+  $(".loader").fadeOut("slow");
+});

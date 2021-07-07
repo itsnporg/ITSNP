@@ -11,6 +11,7 @@
   --bg: white;
   --shadow-1: #d9d9d9;
   --shadow-2: #ffffff;
+  --grey: rgb(85, 84, 84);
 }
 
 [data-theme="dark"] {
@@ -24,6 +25,7 @@
   --bg: #161625;
   --shadow-1: #13131f;
   --shadow-2: #19192b;
+  --grey: rgb(204, 201, 201);
 }
 
 * {
@@ -546,8 +548,8 @@ input:checked + .slider .fa-sun:before {
   .container-wwd,
   .container-wwa {
     padding: 1rem;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
     grid-gap: 1.5rem;
   }
   .container-wwd .title,
@@ -567,28 +569,23 @@ input:checked + .slider .fa-sun:before {
   .container-wwd .title ul li {
     list-style: circle;
   }
-  .container-wwa .aim-box {
-    padding-left: 0 !important;
+  .aim-box {
+    padding-left: 5px !important;
   }
-}
-
-.container-wwd,
-.container-wwa {
-  display: -ms-grid;
-  display: grid;
-  margin: auto;
-}
-
-.container-wwd .title ul,
-.container-wwa .wwa-second-title ul {
-  font-size: 2em;
-  padding-left: 1.5rem;
-  font-weight: bolder;
-}
-
-.container-wwd .title ul li,
-.container-wwa .wwa-second-title ul li {
-  list-style-image: url(/assets/bulletin.png);
+  .hands {
+    padding: 1rem;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 1.5rem;
+  }
+  #dreaming-kid {
+    width: 380px;
+    height: auto;
+  }
+  .img-size {
+    width: 380px;
+    height: auto;
+  }
 }
 
 @media (max-width: 550px) {
@@ -618,12 +615,31 @@ input:checked + .slider .fa-sun:before {
   .container-wwa .wwa-second-title ul li {
     list-style: circle;
   }
-  .container-wwa .aim-box {
-    padding-left: 0;
+  .aim-box {
+    padding-left: 5px !important;
   }
 }
 
-.workshop-img {
+.container-wwd,
+.container-wwa {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+}
+
+.container-wwd .title ul,
+.container-wwa .wwa-second-title ul {
+  font-size: 2em;
+  padding-left: 1.5rem;
+  font-weight: bolder;
+}
+
+.container-wwd .title ul li,
+.container-wwa .wwa-second-title ul li {
+  list-style-image: url(/assets/bulletin.png);
+}
+
+.img-size {
   border-radius: 5px;
 }
 
@@ -637,5 +653,35 @@ input:checked + .slider .fa-sun:before {
 
 .aim-box {
   padding-left: 9rem;
+}
+
+#paragraph {
+  font-size: 1.5em;
+}
+
+.hands {
+  display: -ms-grid;
+  display: grid;
+  margin: auto;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 2rem;
+}
+
+.img-size {
+  height: auto;
+  width: 396px;
+}
+
+.loader {
+  background: black url(/assets/preloader.gif) no-repeat center center;
+  /* background: #000; */
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+  -webkit-animation: p;
+          animation: p;
 }
 /*# sourceMappingURL=style.css.map */
