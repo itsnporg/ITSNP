@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Rubik:wght@300;400;500;600&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
   --primary-color: rgb(0, 0, 0);
   --secondary-color: white;
@@ -12,6 +13,7 @@
   --shadow-1: #d9d9d9;
   --shadow-2: #ffffff;
   --grey: rgb(85, 84, 84);
+  --donor-bg: url(/assets/donors/donor-detail-light.png);
 }
 
 [data-theme="dark"] {
@@ -26,14 +28,15 @@
   --shadow-1: #13131f;
   --shadow-2: #19192b;
   --grey: rgb(204, 201, 201);
+  --donor-bg: url(/assets/donors/donor-detail-dark.png);
 }
 
 * {
   margin: 0;
   padding: 0;
   // font-family: "Poppins", sans-serif;
-  // font-family: "Rubik", sans-serif;
-  font-family: "Ubuntu", sans-serif;
+  // font-family: "Ubuntu", sans-serif;
+  font-family: "Rubik", sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -107,6 +110,7 @@ header {
 }
 
 .gradient-btn button {
+  font-size: 1.2em;
   font-weight: bolder;
   width: 150px;
   color: #fff;
@@ -155,6 +159,7 @@ header {
 #highlight {
   color: #40e495;
   font-size: larger;
+  text-shadow: none;
 }
 
 .about-title-top img {
@@ -300,7 +305,7 @@ header {
   width: 80%;
   object-fit: contain;
   background-color: var(bg);
-  background-image: url(/assets/Circles.svg);
+  background-image: url(/assets/images/Circles.svg);
   border-radius: 18px;
   padding: 1rem;
   box-shadow: 11px 11px 22px var(--shadow-1), -11px -11px 22px var(--shadow-2);
@@ -433,6 +438,9 @@ input:checked + .slider .fa-sun:before {
   justify-content: flex-end;
   align-items: center;
 }
+.What-we-do {
+  font-family: "Ubuntu", sans-serif;
+}
 
 @media (max-width: 700px) {
   .team img {
@@ -498,15 +506,23 @@ input:checked + .slider .fa-sun:before {
     grid-gap: 1.5rem;
   }
   #dreaming-kid {
-    width: 380px;
+    width: 350px !important;
     height: auto;
   }
   .img-size {
-    width: 380px;
+    width: 350px !important;
     height: auto;
   }
-}
+  .donor-text {
+    padding-left: 1em !important;
+  }
 
+  #hamro-donors {
+    width: 200px !important;
+    height: auto !important;
+  }
+}
+// media media media
 @media (max-width: 550px) {
   .about-title-top p,
   .about-title-second p {
@@ -553,14 +569,14 @@ input:checked + .slider .fa-sun:before {
 
 .container-wwd .title ul,
 .container-wwa .wwa-second-title ul {
-  font-size: 2em;
+  font-size: 1.9em;
   padding-left: 1.5rem;
-  font-weight: bolder;
+  font-weight: 450;
 }
 
 .container-wwd .title ul li,
 .container-wwa .wwa-second-title ul li {
-  list-style-image: url(/assets/bulletin.png);
+  list-style-image: url(/assets/images/bulletin.png);
 }
 
 .img-size {
@@ -595,11 +611,54 @@ input:checked + .slider .fa-sun:before {
 }
 
 .loader {
-  background: black url(/assets/preloader.gif) no-repeat center center;
+  background: black url(/assets/gif/preloader.gif) no-repeat center center;
   /* background: #000; */
   height: 100vh;
   width: 100%;
   position: fixed;
   z-index: 10000;
   animation: p;
+}
+.donor-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14rem;
+  padding-top: 6vh;
+}
+.donor-text p {
+  font-size: 1.5em;
+}
+.donor-img {
+  display: flex;
+  justify-content: center;
+}
+#hamro-donors {
+  width: 600px;
+  height: auto;
+}
+
+.donator:hover {
+  border-radius: 90px;
+  transition: 5s;
+  background-color: black;
+}
+.outro {
+  margin-top: 5vh;
+}
+.outro #bye img {
+  height: auto;
+  width: 60px;
+}
+#title-span {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.bottm {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+}
+
+.foot-btm {
+  margin-top: 10vh;
 }
