@@ -219,7 +219,7 @@ header {
   column-gap: 2rem;
 }
 
-.apply-text button,
+.apply-text h3,
 .apply-btn button {
   border: none;
   background: none;
@@ -248,7 +248,7 @@ header {
   box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
 
-.apply-text button {
+.apply-text h3 {
   border-radius: 50px;
   box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
@@ -262,11 +262,12 @@ header {
 
 .register-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.register-text button {
+.register-text h3 {
   font-size: 20px;
   font-weight: bolder;
   padding: 1rem 2rem;
@@ -637,10 +638,13 @@ input:checked + .slider .fa-sun:before {
   height: auto;
 }
 
+.donor {
+  transition: 1s;
+}
 .donator:hover {
-  border-radius: 90px;
+  border-radius: 50px;
   transition: 5s;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.466);
 }
 .outro {
   margin-top: 5vh;

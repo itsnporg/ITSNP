@@ -254,7 +254,7 @@ header {
           column-gap: 2rem;
 }
 
-.apply-text button,
+.apply-text h3,
 .apply-btn button {
   border: none;
   background: none;
@@ -286,7 +286,7 @@ header {
           box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
 }
 
-.apply-text button {
+.apply-text h3 {
   border-radius: 50px;
   -webkit-box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
           box-shadow: 5px 5px 15px var(--apply-text), -5px -5px 15px var(--apply-text2);
@@ -308,6 +308,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -316,7 +320,7 @@ header {
           align-items: center;
 }
 
-.register-text button {
+.register-text h3 {
   font-size: 20px;
   font-weight: bolder;
   padding: 1rem 2rem;
@@ -731,11 +735,16 @@ input:checked + .slider .fa-sun:before {
   height: auto;
 }
 
+.donor {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .donator:hover {
-  border-radius: 90px;
+  border-radius: 50px;
   -webkit-transition: 5s;
   transition: 5s;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.466);
 }
 
 .outro {
